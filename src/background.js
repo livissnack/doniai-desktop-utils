@@ -23,6 +23,7 @@ function createWindow () {
     height: 800,
     frame: false,
     webPreferences: {
+      webSecurity: false,
       nodeIntegration: true
     }
   })
@@ -111,3 +112,52 @@ ipc.on('window-max', () => {
 ipc.on('window-close', () => {
   win.close()
 })
+
+// const menuConfig = [
+//   {
+//     label: '活动',
+//     click () {
+//       app.webContents.send('href', 'active')
+//     }
+//   },
+//   {
+//     label: '聊天',
+//     click () {
+//       app.webContents.send('href', 'chat')
+//     }
+//   },
+//   {
+//     label: '团队',
+//     click () {
+//       app.webContents.send('href', 'team')
+//     }
+//   },
+//   {
+//     label: '作业',
+//     click () {
+//       app.webContents.send('href', 'hammer')
+//     }
+//   },
+//   {
+//     label: '日历',
+//     click () {
+//       app.webContents.send('href', 'calendar')
+//     }
+//   },
+//   {
+//     label: '文件',
+//     click () {
+//       app.webContents.send('href', 'file')
+//     }
+//   },
+//   {
+//     label: '更多',
+//     click () {
+//       app.webContents.send('href', 'more')
+//     }
+//   }
+// ]
+
+// const menu = Menu.buildFromTemplate(menuConfig)
+
+// Menu.setApplicationMenu(menu)
