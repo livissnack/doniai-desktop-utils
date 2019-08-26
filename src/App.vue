@@ -30,6 +30,14 @@ body{
   margin: 0;
 }
 
+a{
+  -webkit-app-region: no-drag;
+}
+
+button{
+  -webkit-app-region: no-drag;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
