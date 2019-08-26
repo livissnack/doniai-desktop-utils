@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar" style="-webkit-app-region: drag; width: 100%;height: 100%">
     <div class="navbar-left">
       <div>
         <a href>
